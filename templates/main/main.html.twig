@@ -1,5 +1,16 @@
 {%  extends('base.html.twig') %}
 
-{%  block content %}
+{%  block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h1> Welcome in Quizmeisster Alpha!</h1>
+                <h2>Please sign in or register</h2>
+                <a href="{{ path('login') }}"><button type="button" class="btn btn-primary btn-lg">Sign in</button></a>
+                <a href="{{ path('registration') }}"><button type="button" class="btn btn-primary btn-lg">Register</button></a>
+            </div>
 
+        </div>
+
+    </div>
 {% endblock %}
